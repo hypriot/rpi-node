@@ -1,10 +1,8 @@
-.PHONY: all build push test version
-
 DOCKER_IMAGE_VERSION=0.12.0
 DOCKER_IMAGE_NAME=hypriot/rpi-node
 DOCKER_IMAGE_TAGNAME=$(DOCKER_IMAGE_NAME):$(DOCKER_IMAGE_VERSION)
 
-all: build
+default: build
 
 build:
 	docker build -t $(DOCKER_IMAGE_TAGNAME) .

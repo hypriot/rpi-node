@@ -1,5 +1,5 @@
 # rpi-node
-Raspberry Pi compatible Docker base image with Node.js preinstalled.
+Raspberry Pi compatible Docker base image with Node.js.
 
 Run all the commands from within the project root directory.
 

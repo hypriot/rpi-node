@@ -1,5 +1,5 @@
 # rpi-node
-Raspberry Pi comptible Docker baseimage with Nodejs preinstalled.
+Raspberry Pi compatible Docker base image with Node.js preinstalled.
 
 Run all the commands from within the project root directory.
 
@@ -8,7 +8,7 @@ Run all the commands from within the project root directory.
 make build
 ```
 
-#### Run the Docker Image and get the version of the installed Nodejs
+#### Run the Docker Image and get the version of the installed Node.js
 ```bash
 make version
 ```

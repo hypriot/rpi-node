@@ -1,19 +1,21 @@
 # rpi-node
-Docker Image packaging for Node.js, used for Raspberry Pi
+Raspberry Pi comptible Docker baseimage with Nodejs preinstalled.
 
-### build the Docker Image
+Run all the commands from within the project root directory.
+
+#### Build the Docker Image
 ```bash
 make build
 ```
 
-### run the Docker Image and get version of installed Node.js
+#### Run the Docker Image and get the version of the installed Nodejs
 ```bash
 make version
 ```
 
-### push Docker Image to Docker Hub
-* First, use a `docker login` with username, password and email address
-* Second, push Docker Image to the official Docker Hub
+#### Push the Docker Image to the Docker Hub
+* First use a `docker login` with username, password and email address
+* Second push the Docker Image to the official Docker Hub
 ```bash
 make push
 ```

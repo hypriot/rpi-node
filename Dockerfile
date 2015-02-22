@@ -4,7 +4,7 @@ FROM resin/rpi-raspbian:wheezy
 MAINTAINER Dieter Reuter <dieter@hypriot.com>
 
 # Install Node.js (from tarball)
-ENV NODE_VERSION 0.10.36
+ENV NODE_VERSION 0.11.16
 ADD http://assets.hypriot.com/node-v${NODE_VERSION}-linux-armv6hf.tar.gz /
 RUN \
   cd /usr/local/ && \

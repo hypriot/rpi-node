@@ -17,4 +17,3 @@ test:
 version:
 	docker run --rm $(DOCKER_IMAGE_TAGNAME) node --version
 	docker run --rm $(DOCKER_IMAGE_TAGNAME) npm --version
-

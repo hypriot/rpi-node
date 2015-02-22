@@ -1,4 +1,7 @@
 # rpi-node
+
+[![dockeri.co](http://dockeri.co/image/hypriot/rpi-node)](https://registry.hub.docker.com/u/hypriot/rpi-node/)
+
 Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org).
 
 Run all the commands from within the project root directory.

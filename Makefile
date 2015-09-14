@@ -3,9 +3,8 @@ SHA := $(shell git rev-parse --short HEAD)
 # Done in Dockerfile
 #targz_file := $(shell cat FILEPATH)
 timestamp := $(shell date +"%Y%m%d%H%M")
-VERSION :=$(shell cat VERSION)        	
+VERSION :=$(shell cat VERSION)
 #NAMESPACE :=$(shell cat NAMESPACE)
-
 
 default: dockerbuild push
 

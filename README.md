@@ -6,16 +6,23 @@ Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org).
 
 Run all the commands from within the project root directory.
 
+### Supported tags and respective Dockerfile links
+0.10.36 ([Dockerfile](https://github.com/hypriot/rpi-node/tree/5b4ce02c35086ef60aae412b3fd9103d5439e1c2))
+0.12.0 ([Dockerfile](https://github.com/hypriot/rpi-node/blob/aa767f5d7e9bd5918aa2f2676d0533eef75d43b0/Dockerfile))
+4.0.0, latest ([4.0/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.0/Dockerfile))
+4.0.0-onbuild, onbuild ([4.0/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.0/onbuild/Dockerfile))
+4.0.0-slim, slim ([4.0/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.0/slim/Dockerfile))
+4.0.0-wheezy, wheezy ([4.0/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.0/wheezy/Dockerfile))
+
 ### Build Details
 - [Source Project Page](https://github.com/hypriot)
 - [Source Repository](https://github.com/hypriot/rpi-node)
-- [Dockerfile](https://github.com/hypriot/rpi-node/blob/master/Dockerfile)
 - [DockerHub] (https://registry.hub.docker.com/u/hypriot/rpi-node/)
 
 
 #### Build the Docker Image
 ```bash
-make build
+make dockerbuild
 ```
 
 #### Run the Docker Image and get the version of the installed Node.js
@@ -54,4 +61,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

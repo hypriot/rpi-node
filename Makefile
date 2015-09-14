@@ -17,6 +17,7 @@ version:
 
 dockerbuild:
 	docker build -t $(NAMESPACE)/$(IMAGENAME) 4.0
+	docker tag $(NAMESPACE)/$(IMAGENAME):latest hypriot/rpi-node:$(VERSION)
 	docker build -t $(NAMESPACE)/$(IMAGENAME)-onbuild 4.0/onbuild
 	docker build -t $(NAMESPACE)/$(IMAGENAME)-slim 4.0/slim
 	docker build -t $(NAMESPACE)/$(IMAGENAME)-wheezy 4.0/wheezy

@@ -19,7 +19,6 @@ Run all the commands from within the project root directory.
 - [Source Repository](https://github.com/hypriot/rpi-node)
 - [DockerHub] (https://registry.hub.docker.com/u/hypriot/rpi-node/)
 
-
 #### Build the Docker Image
 ```bash
 make dockerbuild

@@ -44,6 +44,5 @@ push:
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):onbuild
 	docker tag -f $(NAMESPACE)/$(IMAGENAME)-slim $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):slim
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):slim
-	docker tag -f $(NAMESPACE)/$(IMAGENAME):wheezy $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):wheezy
+	docker tag -f $(NAMESPACE)/$(IMAGENAME)-wheezy $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):wheezy
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):wheezy
-

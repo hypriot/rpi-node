@@ -20,7 +20,7 @@ dockerbuild:
 	docker tag $(NAMESPACE)/$(IMAGENAME):latest hypriot/rpi-node:$(VERSION)
 	docker build -t $(NAMESPACE)/$(IMAGENAME)-onbuild 4.0/onbuild
 	docker build -t $(NAMESPACE)/$(IMAGENAME)-slim 4.0/slim
-	docker build -t $(NAMESPACE)/$(IMAGENAME)-wheezy 4.0/wheezy
+#	docker build -t $(NAMESPACE)/$(IMAGENAME)-wheezy 4.0/wheezy
 
 testimg:
 	docker rm -f new-$(IMAGENAME) || true
@@ -36,8 +36,8 @@ push:
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-onbuild
 	docker tag -f $(NAMESPACE)/$(IMAGENAME)-slim $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-slim
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-slim
-	docker tag -f $(NAMESPACE)/$(IMAGENAME)-wheezy $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-wheezy
-	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-wheezy
+#	docker tag -f $(NAMESPACE)/$(IMAGENAME)-wheezy $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-wheezy
+#	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-wheezy
 	# push latest
 	docker tag -f $(NAMESPACE)/$(IMAGENAME):latest $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):latest
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):latest
@@ -45,6 +45,6 @@ push:
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):onbuild
 	docker tag -f $(NAMESPACE)/$(IMAGENAME)-slim $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):slim
 	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):slim
-	docker tag -f $(NAMESPACE)/$(IMAGENAME):wheezy $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME)::wheezy
-	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):wheezy
+#	docker tag -f $(NAMESPACE)/$(IMAGENAME):wheezy $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME)::wheezy
+#	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):wheezy
 

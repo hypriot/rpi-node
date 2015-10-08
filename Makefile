@@ -38,20 +38,20 @@ testimg:
 
 push:
 	# push VERSION
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION)
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION)-onbuild
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)-onbuild
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)-onbuild
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION)-slim
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)-slim
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)-slim
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION)-wheezy
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)-wheezy
-	docker push $(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)-wheezy
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-onbuild
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)-onbuild
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)-onbuild
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-slim
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)-slim
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)-slim
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION)-wheezy
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MAJOR)-wheezy
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):$(VERSION_MINOR)-wheezy
 	# push latest
-	docker push $(NAMESPACE)/$(IMAGENAME):latest
-	docker push $(NAMESPACE)/$(IMAGENAME):onbuild
-	docker push $(NAMESPACE)/$(IMAGENAME):slim
-	docker push $(NAMESPACE)/$(IMAGENAME):wheezy
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):latest
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):onbuild
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):slim
+	docker push $(REGISTRY_URL)/$(NAMESPACE)/$(IMAGENAME):wheezy

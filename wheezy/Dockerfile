@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:jessie
+FROM resin/rpi-raspbian:wheezy
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential git libssl-dev python ca-certificates curl && \

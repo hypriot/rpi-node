@@ -1,8 +1,11 @@
 FROM resin/rpi-raspbian:jessie
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential git libssl-dev python ca-certificates curl && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
+    wget \
+  && rm -rf /var/lib/apt/lists/* \
+  && apt-get clean
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
@@ -18,7 +21,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 4.1.2
+ENV NODE_VERSION 5.2.0
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-armv6l.tar.gz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \

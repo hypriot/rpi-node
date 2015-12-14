@@ -4,13 +4,15 @@ Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 
 Run all the commands from within the project root directory.
 
-### Supported tags and respective Dockerfile links
-0.10.36 ([Dockerfile](https://github.com/hypriot/rpi-node/tree/5b4ce02c35086ef60aae412b3fd9103d5439e1c2))
-0.12.0 ([Dockerfile](https://github.com/hypriot/rpi-node/blob/aa767f5d7e9bd5918aa2f2676d0533eef75d43b0/Dockerfile))
-4.1.2, 4.1, 4, latest ([Dockerfile](https://github.com/hypriot/rpi-node/blob/master/Dockerfile))
-4.1.2-onbuild, 4.1-onbuild, 4-onbuild, onbuild ([onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/onbuild/Dockerfile))
-4.1.2-slim, 4.1-slim, 4-slim, slim ([slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/slim/Dockerfile))
-4.1.2-wheezy, 4.1-wheezy, 4-wheezy, wheezy ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/wheezy/Dockerfile))
+### Supported tags and respective `Dockerfile` links
+- `4.2.3`, `4.2`, `4`, `argon` ([4.2/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.2/Dockerfile))
+- `4.2.3-onbuild`, `4.2-onbuild`, `4-onbuild`, `argon-onbuild` ([4.2/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.2/onbuild/Dockerfile))
+- `4.2.3-slim`, `4.2-slim`, `4-slim`, `argon-slim` ([4.2/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.2/slim/Dockerfile))
+- `4.2.3-wheezy`, `4.2-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.2/wheezy/Dockerfile))
+- `5.2.0`, `5.2`, `5`, `latest` ([5.2/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.2/Dockerfile))
+- `5.2.0-onbuild`, `5.2-onbuild`, `5-onbuild`, `onbuild` ([5.2/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.2/onbuild/Dockerfile))
+- `5.2.0-slim`, `5.2-slim`, `5-slim`, `slim` ([5.2/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.2/slim/Dockerfile))
+- `5.2.0-wheezy`, `5.2-wheezy`, `5-wheezy`, `wheezy` ([5.2/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.2/wheezy/Dockerfile))
 
 ### Build Details
 - [Source Project Page](https://github.com/hypriot)
@@ -58,4 +60,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

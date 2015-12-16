@@ -4,11 +4,11 @@ VERSION_MINOR :=$(shell cat VERSION | cut -d "." -f 1-2)
 VERSION_MAJOR :=$(shell cat VERSION | cut -d "." -f 1)
 NAMESPACE := hypriot
 
-default: dockerbuild push
+default: dockerbuild
 
 test:
 	docker run --rm $(NAMESPACE)/$(IMAGENAME) --help
-        
+
 version:
 	docker run --rm $(NAMESPACE)/$(IMAGENAME) --version
 

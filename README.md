@@ -1,4 +1,4 @@
-# rpi-node
+# rpi-node [![Build Status](https://armbuilder.hypriot.com/api/badges/hypriot/rpi-node/status.svg)](https://armbuilder.hypriot.com/hypriot/rpi-node)
 
 Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 

@@ -1,18 +1,11 @@
 build:
-  image: firecyberice/rpi-docker:1.10.0-dev
+  image: armdrone/drone-docker
   environment:
     - DOCKER_HOST=tcp://localhost:2375
   commands:
     - apk update && apk add git ca-certificates make
     - export VERSION=$(cat VERSION)
     - make
-
-compose:
-  docker:
-    privileged: true
-    image: armdrone/drone-docker
-
-publish:
 
 notify:
   slack:

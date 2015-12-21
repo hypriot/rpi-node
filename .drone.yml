@@ -7,6 +7,13 @@ build:
     - export VERSION=$(cat VERSION)
     - make
 
+compose:
+  docker:
+    privileged: true
+    image: armdrone/drone-docker
+
+publish:
+
 notify:
   slack:
     webhook_url: $$SLACK_WEBHOOK_URL

@@ -7,13 +7,6 @@ build:
     - export VERSION=$(cat VERSION)
     - make
 
-compose:
-  docker:
-    privileged: true
-    image: firecyberice/rpi-docker:1.10.0-dev-dind
-
-publish:
-
 notify:
   slack:
     webhook_url: $$SLACK_WEBHOOK_URL

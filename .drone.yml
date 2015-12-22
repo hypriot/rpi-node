@@ -1,23 +1,25 @@
-image: registry.hypriot.com/armbuildchain/dockerindocker
-docker:
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
-git:
-  path: github.com/hypriot/rpi-node
-script:
-  - echo "+++++ start docker daemon +++++"
-  - wrapdocker &
-  - sleep 5
-  - docker login --username=$$REGISTRY_USER --password=$$REGISTRY_PASSWORD --email=$$REGISTRY_USER_EMAIL $$REGISTRY_URL
-  - echo "+++++ build docker image +++++"
-  - make
-  - echo "+++++ stop docker daemon +++++"
-  - start-stop-daemon --stop --pidfile "/var/run/docker.pid"
-  - echo -e "#####################\n***** COMPLETED *****\n#####################"
+build:
+  image: firecyberice/rpi-docker:1.10.0-dev
+  extra_hosts:
+    - docker
+  environment:
+    - DOCKER_HOST=tcp://localhost:2375
+  commands:
+    - apk update && apk add git ca-certificates make
+    - export VERSION=$(cat VERSION)
+    - make
+
+compose:
+  docker:
+    privileged: true
+    image: firecyberice/rpi-docker:1.10.0-dev-dind
 
 notify:
   slack:
     webhook_url: $$SLACK_WEBHOOK_URL
-    on_started: false
-    on_success: true
-    on_failure: true
+    channel: buildstatus
+    username: Drone
+    when:
+      started: false
+      success: true
+      failure: true

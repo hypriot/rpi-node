@@ -42,6 +42,10 @@ for version in "${versions[@]}"; do
   docker tag -f hypriot/rpi-node:$tag hypriot/rpi-node:$minor_tag
   docker tag -f hypriot/rpi-node:$tag hypriot/rpi-node:$major_tag
 
+  if [ "$major_tag" -eq "4" ]; then
+    docker tag -f hypriot/rpi-node:$major_tag hypriot/rpi-node:argon
+  fi
+
   variants=( onbuild slim wheezy )
 
   for variant in "${variants[@]}"; do
@@ -56,9 +60,17 @@ for version in "${versions[@]}"; do
 
     docker tag -f hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$minor_tag-$variant
     docker tag -f hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$major_tag-$variant
+
+    if [ "$major_tag" -eq "4" ]; then
+      docker tag -f hypriot/rpi-node:$major_tag-$variant hypriot/rpi-node:argon-$variant
+    fi
   done
 
 done
+
+if [ "$major_tag" -eq "5" ]; then
+  docker tag -f hypriot/rpi-node:$major_tag hypriot/rpi-node:latest
+fi
 
 info "All builds successful!"
 

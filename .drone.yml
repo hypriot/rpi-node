@@ -15,67 +15,56 @@ publish:
     username: $$DOCKER_USER
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: hypriot/rpi-node
+    repo: hypriot/rpi-node-test
     tag:
-      - 4.2.3
-      - 4.2
-      - 4
-      - latest
+      - '4.2.3'
+      - '4.2'
+      - '4'
+      - argon
     file: 4.2/Dockerfile
-#    when:
-#      branch: master
+    when:
+      branch: master
 
   docker:
     username: $$DOCKER_USER
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: hypriot/rpi-node
-    tag:
-      - 5.3.0
-      - 5.3
-      - 5
-    file: 5.3/Dockerfile
-#    when:
-#      branch: master
-
-  docker:
-    username: $$DOCKER_USER
-    password: $$DOCKER_PASS
-    email: $$DOCKER_EMAIL
-    repo: hypriot/rpi-node
+    repo: hypriot/rpi-node-test
     tag:
       - 4.2.3-onbuild
       - 4.2-onbuild
       - 4-onbuild
+      - argon-onbuild
     file: 4.2/onbuild/Dockerfile
-#    when:
-#      branch: master
+    when:
+      branch: master
 
   docker:
     username: $$DOCKER_USER
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: hypriot/rpi-node
+    repo: hypriot/rpi-node-test
     tag:
       - 4.2.3-wheezy
       - 4.2-wheezy
       - 4-wheezy
+      - argon-wheezy
     file: 4.2/wheezy/Dockerfile
-#    when:
-#      branch: master
+    when:
+      branch: master
 
   docker:
     username: $$DOCKER_USER
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: hypriot/rpi-node
+    repo: hypriot/rpi-node-test
     tag:
       - 4.2.3-slim
       - 4.2-slim
       - 4-slim
     file: 4.2/slim/Dockerfile
-#    when:
-#      branch: master
+    when:
+      branch: master
 
 notify:
   slack:

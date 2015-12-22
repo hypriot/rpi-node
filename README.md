@@ -21,7 +21,7 @@ Run all the commands from within the project root directory.
 
 #### Build the Docker Image
 ```bash
-make dockerbuild
+./build.sh
 ```
 
 #### Run the Docker Image and get the version of the installed Node.js
@@ -33,9 +33,7 @@ make version
 * First use a `docker login` with username, password and email address
 * Second push the Docker Image to the official Docker Hub
 
-```bash
-make push
-```
+This will be done in the `.drone.yml`
 
 ## License
 

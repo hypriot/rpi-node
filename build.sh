@@ -27,6 +27,8 @@ for version in "${versions[@]}"; do
 
   echo $version
   tag=$(cat $version/Dockerfile | grep "ENV NODE_VERSION" | cut -d' ' -f3)
+  minor_tag=$(echo $tag | cut -d "." -f 1-2)
+  major_tag=$(echo $tag | cut -d "." -f 1)
 
   info "Building $tag..."
   docker build -q -t hypriot/rpi-node:$tag $version
@@ -37,7 +39,14 @@ for version in "${versions[@]}"; do
     info "Build of $tag succeeded."
   fi
 
-  variants=( slim wheezy )
+  docker tag -f hypriot/rpi-node:$tag hypriot/rpi-node:$minor_tag
+  docker tag -f hypriot/rpi-node:$tag hypriot/rpi-node:$major_tag
+
+  if [ "$major_tag" -eq "4" ]; then
+    docker tag -f hypriot/rpi-node:$major_tag hypriot/rpi-node:argon
+  fi
+
+  variants=( onbuild slim wheezy )
 
   for variant in "${variants[@]}"; do
     info "Building $tag-$variant variant..."
@@ -49,9 +58,19 @@ for version in "${versions[@]}"; do
       info "Build of $tag-$variant succeeded."
     fi
 
+    docker tag -f hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$minor_tag-$variant
+    docker tag -f hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$major_tag-$variant
+
+    if [ "$major_tag" -eq "4" ]; then
+      docker tag -f hypriot/rpi-node:$major_tag-$variant hypriot/rpi-node:argon-$variant
+    fi
   done
 
 done
+
+if [ "$major_tag" -eq "5" ]; then
+  docker tag -f hypriot/rpi-node:$major_tag hypriot/rpi-node:latest
+fi
 
 info "All builds successful!"
 

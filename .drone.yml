@@ -22,8 +22,8 @@ publish:
       - '4'
       - argon
     file: 4.2/Dockerfile
-    when:
-      branch: master
+#    when:
+#      branch: master
 
   docker:
     username: $$DOCKER_USER
@@ -36,8 +36,8 @@ publish:
       - 4-onbuild
       - argon-onbuild
     file: 4.2/onbuild/Dockerfile
-    when:
-      branch: master
+#    when:
+#      branch: master
 
   docker:
     username: $$DOCKER_USER
@@ -50,8 +50,8 @@ publish:
       - 4-wheezy
       - argon-wheezy
     file: 4.2/wheezy/Dockerfile
-    when:
-      branch: master
+#    when:
+#      branch: master
 
   docker:
     username: $$DOCKER_USER
@@ -63,8 +63,8 @@ publish:
       - 4.2-slim
       - 4-slim
     file: 4.2/slim/Dockerfile
-    when:
-      branch: master
+#    when:
+#      branch: master
 
 notify:
   slack:

@@ -4,15 +4,78 @@ build:
     - docker
   environment:
     - DOCKER_HOST=tcp://localhost:2375
-  commands:
-    - apk update && apk add git ca-certificates make
-    - export VERSION=$(cat VERSION)
-    - make
 
 compose:
   docker:
     privileged: true
     image: firecyberice/rpi-docker:1.10.0-dev-dind
+
+publish:
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: $$DOCKER_EMAIL
+    repo: hypriot/rpi-node
+    tag:
+      - 4.2.3
+      - 4.2
+      - 4
+      - latest
+    file: 4.2/Dockerfile
+#    when:
+#      branch: master
+
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: $$DOCKER_EMAIL
+    repo: hypriot/rpi-node
+    tag:
+      - 5.3.0
+      - 5.3
+      - 5
+    file: 5.3/Dockerfile
+#    when:
+#      branch: master
+
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: $$DOCKER_EMAIL
+    repo: hypriot/rpi-node
+    tag:
+      - 4.2.3-onbuild
+      - 4.2-onbuild
+      - 4-onbuild
+    file: 4.2/onbuild/Dockerfile
+#    when:
+#      branch: master
+
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: $$DOCKER_EMAIL
+    repo: hypriot/rpi-node
+    tag:
+      - 4.2.3-wheezy
+      - 4.2-wheezy
+      - 4-wheezy
+    file: 4.2/wheezy/Dockerfile
+#    when:
+#      branch: master
+
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: $$DOCKER_EMAIL
+    repo: hypriot/rpi-node
+    tag:
+      - 4.2.3-slim
+      - 4.2-slim
+      - 4-slim
+    file: 4.2/slim/Dockerfile
+#    when:
+#      branch: master
 
 notify:
   slack:

@@ -5,6 +5,7 @@ build:
   environment:
     - DOCKER_HOST=tcp://localhost:2375
   commands:
+    - apk update && apk upgrade && apk-install bash
     - ./build.sh
 
 compose:

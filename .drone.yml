@@ -72,11 +72,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - '5.5.0'
-      - '5.5'
+      - '5.6.0'
+      - '5.6'
       - '5'
       - latest
-    file: 5.5/Dockerfile
+    file: 5.6/Dockerfile
     when:
       branch: master
 
@@ -86,11 +86,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.5.0-onbuild
-      - 5.5-onbuild
+      - 5.6.0-onbuild
+      - 5.6-onbuild
       - 5-onbuild
       - onbuild
-    file: 5.5/onbuild/Dockerfile
+    file: 5.6/onbuild/Dockerfile
     when:
       branch: master
 
@@ -100,11 +100,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.5.0-wheezy
-      - 5.5-wheezy
+      - 5.6.0-wheezy
+      - 5.6-wheezy
       - 5-wheezy
       - wheezy
-    file: 5.5/wheezy/Dockerfile
+    file: 5.6/wheezy/Dockerfile
     when:
       branch: master
 
@@ -114,11 +114,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.5.0-slim
-      - 5.5-slim
+      - 5.6.0-slim
+      - 5.6-slim
       - 5-slim
       - slim
-    file: 5.5/slim/Dockerfile
+    file: 5.6/slim/Dockerfile
     when:
       branch: master
 

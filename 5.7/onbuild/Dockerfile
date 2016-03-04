@@ -1,4 +1,4 @@
-FROM hypriot/rpi-node:5.6.0
+FROM hypriot/rpi-node:5.7.1
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

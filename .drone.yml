@@ -17,7 +17,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - '4.3.1'
+      - '4.3.2'
       - '4.3'
       - '4'
       - argon
@@ -31,7 +31,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 4.3.1-onbuild
+      - 4.3.2-onbuild
       - 4.3-onbuild
       - 4-onbuild
       - argon-onbuild
@@ -45,7 +45,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 4.3.1-wheezy
+      - 4.3.2-wheezy
       - 4.3-wheezy
       - 4-wheezy
       - argon-wheezy
@@ -59,7 +59,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 4.3.1-slim
+      - 4.3.2-slim
       - 4.3-slim
       - 4-slim
     file: 4.3/slim/Dockerfile
@@ -72,11 +72,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - '5.6.0'
-      - '5.6'
+      - '5.7.1'
+      - '5.7'
       - '5'
       - latest
-    file: 5.6/Dockerfile
+    file: 5.7/Dockerfile
     when:
       branch: master
 
@@ -86,11 +86,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.6.0-onbuild
-      - 5.6-onbuild
+      - 5.7.1-onbuild
+      - 5.7-onbuild
       - 5-onbuild
       - onbuild
-    file: 5.6/onbuild/Dockerfile
+    file: 5.7/onbuild/Dockerfile
     when:
       branch: master
 
@@ -100,11 +100,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.6.0-wheezy
-      - 5.6-wheezy
+      - 5.7.1-wheezy
+      - 5.7-wheezy
       - 5-wheezy
       - wheezy
-    file: 5.6/wheezy/Dockerfile
+    file: 5.7/wheezy/Dockerfile
     when:
       branch: master
 
@@ -114,11 +114,11 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.6.0-slim
-      - 5.6-slim
+      - 5.7.1-slim
+      - 5.7-slim
       - 5-slim
       - slim
-    file: 5.6/slim/Dockerfile
+    file: 5.7/slim/Dockerfile
     when:
       branch: master
 

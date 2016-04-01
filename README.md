@@ -5,10 +5,10 @@ Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 Run all the commands from within the project root directory.
 
 ### Supported tags and respective `Dockerfile` links
-- `4.4.1`, `4.4`, `4`, `argon` ([4.4/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/Dockerfile))
-- `4.4.1-onbuild`, `4.4-onbuild`, `4-onbuild`, `argon-onbuild` ([4.4/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/onbuild/Dockerfile))
-- `4.4.1-slim`, `4.4-slim`, `4-slim`, `argon-slim` ([4.4/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/slim/Dockerfile))
-- `4.4.1-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/wheezy/Dockerfile))
+- `4.4.2`, `4.4`, `4`, `argon` ([4.4/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/Dockerfile))
+- `4.4.2-onbuild`, `4.4-onbuild`, `4-onbuild`, `argon-onbuild` ([4.4/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/onbuild/Dockerfile))
+- `4.4.2-slim`, `4.4-slim`, `4-slim`, `argon-slim` ([4.4/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/slim/Dockerfile))
+- `4.4.2-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/wheezy/Dockerfile))
 - `5.9.1`, `5.9`, `5`, `latest` ([5.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.9/Dockerfile))
 - `5.9.1-onbuild`, `5.9-onbuild`, `5-onbuild`, `onbuild` ([5.9/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.9/onbuild/Dockerfile))
 - `5.9.1-slim`, `5.9-slim`, `5-slim`, `slim` ([5.9/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.9/slim/Dockerfile))

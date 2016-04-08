@@ -72,7 +72,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - '5.10.0'
+      - '5.10.1'
       - '5.10'
       - '5'
       - latest
@@ -86,7 +86,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.10.0-onbuild
+      - 5.10.1-onbuild
       - 5.10-onbuild
       - 5-onbuild
       - onbuild
@@ -100,7 +100,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.10.0-wheezy
+      - 5.10.1-wheezy
       - 5.10-wheezy
       - 5-wheezy
       - wheezy
@@ -114,7 +114,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.10.0-slim
+      - 5.10.1-slim
       - 5.10-slim
       - 5-slim
       - slim

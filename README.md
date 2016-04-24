@@ -9,10 +9,10 @@ Run all the commands from within the project root directory.
 - `4.4.3-onbuild`, `4.4-onbuild`, `4-onbuild`, `argon-onbuild` ([4.4/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/onbuild/Dockerfile))
 - `4.4.3-slim`, `4.4-slim`, `4-slim`, `argon-slim` ([4.4/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/slim/Dockerfile))
 - `4.4.3-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/wheezy/Dockerfile))
-- `5.10.1`, `5.10`, `5`, `latest` ([5.10/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.10/Dockerfile))
-- `5.10.1-onbuild`, `5.10-onbuild`, `5-onbuild`, `onbuild` ([5.10/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.10/onbuild/Dockerfile))
-- `5.10.1-slim`, `5.10-slim`, `5-slim`, `slim` ([5.10/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.10/slim/Dockerfile))
-- `5.10.1-wheezy`, `5.10-wheezy`, `5-wheezy`, `wheezy` ([5.10/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.10/wheezy/Dockerfile))
+- `5.11.0`, `5.11`, `5`, `latest` ([5.11/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/Dockerfile))
+- `5.11.0-onbuild`, `5.11-onbuild`, `5-onbuild`, `onbuild` ([5.11/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/onbuild/Dockerfile))
+- `5.11.0-slim`, `5.11-slim`, `5-slim`, `slim` ([5.11/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/slim/Dockerfile))
+- `5.11.0-wheezy`, `5.11-wheezy`, `5-wheezy`, `wheezy` ([5.11/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/wheezy/Dockerfile))
 
 ### Build Details
 - [Source Project Page](https://github.com/hypriot)

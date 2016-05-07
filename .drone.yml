@@ -72,7 +72,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - '5.11.0'
+      - '5.11.1'
       - '5.11'
       - '5'
     file: 5.11/Dockerfile
@@ -85,7 +85,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.11.0-onbuild
+      - 5.11.1-onbuild
       - 5.11-onbuild
       - 5-onbuild
     file: 5.11/onbuild/Dockerfile
@@ -98,7 +98,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.11.0-wheezy
+      - 5.11.1-wheezy
       - 5.11-wheezy
       - 5-wheezy
     file: 5.11/wheezy/Dockerfile
@@ -111,7 +111,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - 5.11.0-slim
+      - 5.11.1-slim
       - 5.11-slim
       - 5-slim
     file: 5.11/slim/Dockerfile

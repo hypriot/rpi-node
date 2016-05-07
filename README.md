@@ -13,10 +13,10 @@ Run all the commands from within the project root directory.
 - `5.11.0-onbuild`, `5.11-onbuild`, `5-onbuild` ([5.11/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/onbuild/Dockerfile))
 - `5.11.0-slim`, `5.11-slim`, `5-slim` ([5.11/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/slim/Dockerfile))
 - `5.11.0-wheezy`, `5.11-wheezy`, `5-wheezy` ([5.11/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/wheezy/Dockerfile))
-- `6.0.0`, `6.0`, `6`, `latest` ([6.0/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.0/Dockerfile))
-- `6.0.0-onbuild`, `6.0-onbuild`, `6-onbuild`, `onbuild` ([6.0/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.0/onbuild/Dockerfile))
-- `6.0.0-slim`, `6.0-slim`, `6-slim`, `slim` ([6.0/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.0/slim/Dockerfile))
-- `6.0.0-wheezy`, `6.0-wheezy`, `6-wheezy`, `wheezy` ([6.0/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.0/wheezy/Dockerfile))
+- `6.1.0`, `6.1`, `6`, `latest` ([6.1/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/Dockerfile))
+- `6.1.0-onbuild`, `6.1-onbuild`, `6-onbuild`, `onbuild` ([6.1/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/onbuild/Dockerfile))
+- `6.1.0-slim`, `6.1-slim`, `6-slim`, `slim` ([6.1/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/slim/Dockerfile))
+- `6.1.0-wheezy`, `6.1-wheezy`, `6-wheezy`, `wheezy` ([6.1/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/wheezy/Dockerfile))
 
 ### Build Details
 - [Source Project Page](https://github.com/hypriot)

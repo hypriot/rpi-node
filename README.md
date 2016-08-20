@@ -5,18 +5,14 @@ Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 Run all the commands from within the project root directory.
 
 ### Supported tags and respective `Dockerfile` links
-- `4.4.4`, `4.4`, `4`, `argon` ([4.4/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/Dockerfile))
-- `4.4.4-onbuild`, `4.4-onbuild`, `4-onbuild`, `argon-onbuild` ([4.4/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/onbuild/Dockerfile))
-- `4.4.4-slim`, `4.4-slim`, `4-slim`, `argon-slim` ([4.4/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/slim/Dockerfile))
-- `4.4.4-wheezy`, `4.4-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.4/wheezy/Dockerfile))
-- `5.11.1`, `5.11`, `5`([5.11/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/Dockerfile))
-- `5.11.1-onbuild`, `5.11-onbuild`, `5-onbuild` ([5.11/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/onbuild/Dockerfile))
-- `5.11.1-slim`, `5.11-slim`, `5-slim` ([5.11/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/slim/Dockerfile))
-- `5.11.1-wheezy`, `5.11-wheezy`, `5-wheezy` ([5.11/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/5.11/wheezy/Dockerfile))
-- `6.1.0`, `6.1`, `6`, `latest` ([6.1/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/Dockerfile))
-- `6.1.0-onbuild`, `6.1-onbuild`, `6-onbuild`, `onbuild` ([6.1/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/onbuild/Dockerfile))
-- `6.1.0-slim`, `6.1-slim`, `6-slim`, `slim` ([6.1/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/slim/Dockerfile))
-- `6.1.0-wheezy`, `6.1-wheezy`, `6-wheezy`, `wheezy` ([6.1/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.1/wheezy/Dockerfile))
+- `4.5.0`, `4.5`, `4`, `argon` ([4.5/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.5/Dockerfile))
+- `4.5.0-onbuild`, `4.5-onbuild`, `4-onbuild`, `argon-onbuild` ([4.5/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.5/onbuild/Dockerfile))
+- `4.5.0-slim`, `4.5-slim`, `4-slim`, `argon-slim` ([4.5/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.5/slim/Dockerfile))
+- `4.5.0-wheezy`, `4.5-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.5/wheezy/Dockerfile))
+- `6.4.0`, `6.4`, `6`, `latest` ([6.4/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.4/Dockerfile))
+- `6.4.0-onbuild`, `6.4-onbuild`, `6-onbuild`, `onbuild` ([6.4/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.4/onbuild/Dockerfile))
+- `6.4.0-slim`, `6.4-slim`, `6-slim`, `slim` ([6.4/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.4/slim/Dockerfile))
+- `6.4.0-wheezy`, `6.4-wheezy`, `6-wheezy`, `wheezy` ([6.4/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.4/wheezy/Dockerfile))
 
 ### Build Details
 - [Source Project Page](https://github.com/hypriot)

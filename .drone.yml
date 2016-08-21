@@ -72,19 +72,6 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-node
     tag:
-      - '5.11.1'
-      - '5.11'
-      - '5'
-    file: 5.11/Dockerfile
-    when:
-      branch: master
-
-  docker:
-    username: $$DOCKER_USER
-    password: $$DOCKER_PASS
-    email: $$DOCKER_EMAIL
-    repo: hypriot/rpi-node
-    tag:
       - '6.4.0'
       - '6.4'
       - '6'

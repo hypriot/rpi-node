@@ -38,8 +38,9 @@ for version in "${versions[@]}"; do
   fi
   if [ $tag_major == "6" ]; then
     name="boron"
-    docker tag hypriot/rpi-node:$tag hypriot/rpi-node:latest
-    docker push hypriot/rpi-node:latest
+  fi
+  if [ $tag_major == "7" ]; then
+    name="latest"
   fi
   docker tag hypriot/rpi-node:$tag hypriot/rpi-node:$tag_major
   docker tag hypriot/rpi-node:$tag hypriot/rpi-node:$tag_minor

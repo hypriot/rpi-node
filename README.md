@@ -5,36 +5,32 @@ Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 Run all the commands from within the project root directory.
 
 ### Supported tags and respective `Dockerfile` links
+- `7.0.0`, `7.0`, `7`, `latest` ([7.0/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/Dockerfile))
+- `7.0.0-onbuild`, `7.0-onbuild`, `7-onbuild`, `boron-onbuild`, `onbuild` ([7.0/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/onbuild/Dockerfile))
+- `7.0.0-slim`, `7.0-slim`, `7-slim`, `slim` ([7.0/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/slim/Dockerfile))
+- `7.0.0-wheezy`, `7.0-wheezy`, `7-wheezy`, `wheezy` ([7.0/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/wheezy/Dockerfile))
+- `6.9.1`, `6.9`, `6`, `boron`, `latest` ([6.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/Dockerfile))
+- `6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` ([6.9/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/onbuild/Dockerfile))
+- `6.9.1-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` ([6.9/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/slim/Dockerfile))
+- `6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy`, `wheezy` ([6.9/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/wheezy/Dockerfile))
 - `4.6.1`, `4.6`, `4`, `argon` ([4.6/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/Dockerfile))
 - `4.6.1-onbuild`, `4.6-onbuild`, `4-onbuild`, `argon-onbuild` ([4.6/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/onbuild/Dockerfile))
 - `4.6.1-slim`, `4.6-slim`, `4-slim`, `argon-slim` ([4.6/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/slim/Dockerfile))
 - `4.6.1-wheezy`, `4.6-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/wheezy/Dockerfile))
-- `6.9.1`, `6.9`, `6`, `latest` ([6.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/Dockerfile))
-- `6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `onbuild` ([6.9/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/onbuild/Dockerfile))
-- `6.9.1-slim`, `6.9-slim`, `6-slim`, `slim` ([6.9/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/slim/Dockerfile))
-- `6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `wheezy` ([6.9/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/wheezy/Dockerfile))
+
+## rpi-node
+
+Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org).
+
+Run all the commands from within the project root directory.
 
 ### Build Details
 - [Source Project Page](https://github.com/hypriot)
 - [Source Repository](https://github.com/hypriot/rpi-node)
-- [DockerHub] (https://registry.hub.docker.com/u/hypriot/rpi-node/)
 
 #### Build the Docker Image
 ```bash
-make dockerbuild
-```
-
-#### Run the Docker Image and get the version of the installed Node.js
-```bash
-make version
-```
-
-#### Push the Docker Image to the Docker Hub
-* First use a `docker login` with username, password and email address
-* Second push the Docker Image to the official Docker Hub
-
-```bash
-make push
+./build.sh
 ```
 
 ## License

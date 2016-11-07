@@ -6,7 +6,7 @@ Run all the commands from within the project root directory.
 
 ### Supported tags and respective `Dockerfile` links
 - `7.0.0`, `7.0`, `7`, `latest` ([7.0/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/Dockerfile))
-- `7.0.0-onbuild`, `7.0-onbuild`, `7-onbuild`, `boron-onbuild`, `onbuild` ([7.0/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/onbuild/Dockerfile))
+- `7.0.0-onbuild`, `7.0-onbuild`, `7-onbuild`, `onbuild` ([7.0/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/onbuild/Dockerfile))
 - `7.0.0-slim`, `7.0-slim`, `7-slim`, `slim` ([7.0/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/slim/Dockerfile))
 - `7.0.0-wheezy`, `7.0-wheezy`, `7-wheezy`, `wheezy` ([7.0/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/wheezy/Dockerfile))
 - `6.9.1`, `6.9`, `6`, `boron`, `latest` ([6.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/Dockerfile))

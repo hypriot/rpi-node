@@ -40,17 +40,22 @@ for version in "${versions[@]}"; do
     name="boron"
   fi
   if [ $tag_major == "7" ]; then
-    name="latest"
+    name=""
   fi
   docker tag hypriot/rpi-node:$tag hypriot/rpi-node:$tag_major
   docker tag hypriot/rpi-node:$tag hypriot/rpi-node:$tag_minor
   docker tag hypriot/rpi-node:$tag hypriot/rpi-node:$tag_patch
-  docker tag hypriot/rpi-node:$tag hypriot/rpi-node:$name
   docker push hypriot/rpi-node:$tag_major
   docker push hypriot/rpi-node:$tag_major
   docker push hypriot/rpi-node:$tag_minor
   docker push hypriot/rpi-node:$tag_patch
-  docker push hypriot/rpi-node:$name
+  if [ -z $name ]; then
+    docker tag hypriot/rpi-node:$tag hypriot/rpi-node:latest
+    docker push hypriot/rpi-node:latest
+  else
+    docker tag hypriot/rpi-node:$tag hypriot/rpi-node:$name
+    docker push hypriot/rpi-node:$name
+  fi
 
   if [[ $? -gt 0 ]]; then
     fatal "Tag of $tag failed!"
@@ -65,12 +70,17 @@ for version in "${versions[@]}"; do
     docker tag hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$tag_major-$variant
     docker tag hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$tag_minor-$variant
     docker tag hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$tag_patch-$variant
-    docker tag hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$name-$variant
     docker push hypriot/rpi-node:$tag-$variant
     docker push hypriot/rpi-node:$tag_major-$variant
     docker push hypriot/rpi-node:$tag_minor-$variant
     docker push hypriot/rpi-node:$tag_patch-$variant
-    docker push hypriot/rpi-node:$name-$variant
+    if [ -z $name ]; then
+      docker tag hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$variant
+      docker push hypriot/rpi-node:$variant
+    else
+      docker tag hypriot/rpi-node:$tag-$variant hypriot/rpi-node:$name-$variant
+      docker push hypriot/rpi-node:$name-$variant
+    fi
 
     if [[ $? -gt 0 ]]; then
       fatal "Tag of $tag-$variant failed!"

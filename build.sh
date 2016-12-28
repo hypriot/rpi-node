@@ -37,7 +37,7 @@ for version in "${versions[@]}"; do
     info "Build of $tag succeeded."
   fi
 
-  variants=( slim wheezy onbuild )
+  variants=( slim onbuild )
 
   for variant in "${variants[@]}"; do
     info "Building $tag-$variant variant..."

@@ -63,7 +63,7 @@ for version in "${versions[@]}"; do
     info "Tag of $tag succeeded."
   fi
 
-  variants=( slim wheezy onbuild )
+  variants=( slim onbuild )
 
   for variant in "${variants[@]}"; do
     info "Tagging $tag-$variant variant..."

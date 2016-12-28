@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
-# Run a build for all images.
+# Run a test for all images.
 
 set -uo pipefail
 
@@ -28,31 +28,31 @@ for version in "${versions[@]}"; do
   echo $version
   tag=$(cat $version/Dockerfile | grep "ENV NODE_VERSION" | cut -d' ' -f3)
 
-  info "Building $tag..."
-  docker build -t hypriot/rpi-node:$tag $version
+  info "Testing $tag..."
+  docker run hypriot/rpi-node:$tag node --version
 
   if [[ $? -gt 0 ]]; then
-    fatal "Build of $tag failed!"
+    fatal "Test of $tag failed!"
   else
-    info "Build of $tag succeeded."
+    info "Test of $tag succeeded."
   fi
 
   variants=( slim onbuild )
 
   for variant in "${variants[@]}"; do
-    info "Building $tag-$variant variant..."
-    docker build -t hypriot/rpi-node:$tag-$variant $version/$variant
+    info "Testing $tag-$variant variant..."
+    docker run hypriot/rpi-node:$tag-$variant node --version
 
     if [[ $? -gt 0 ]]; then
-      fatal "Build of $tag-$variant failed!"
+      fatal "Test of $tag-$variant failed!"
     else
-      info "Build of $tag-$variant succeeded."
+      info "Test of $tag-$variant succeeded."
     fi
 
   done
 
 done
 
-info "All builds successful!"
+info "All tests successful!"
 
 exit 0

@@ -1,0 +1,21 @@
+sudo: required
+services:
+- docker
+language: bash
+env:
+  - VERSION=4.7
+  - VERSION=6.9
+  - VERSION=7.3
+script:
+# prepare qemu
+- docker run --rm --privileged multiarch/qemu-user-static:register --reset
+# build image
+- ./build.sh $VERSION
+# test image
+- ./test.sh $VERSION
+# push image
+- >
+  if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+    ./push.sh $VERSION
+  fi

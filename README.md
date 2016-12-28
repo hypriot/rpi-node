@@ -1,22 +1,22 @@
-# rpi-node [![Build Status](https://armbuilder.hypriot.com/api/badges/hypriot/rpi-node/status.svg)](https://armbuilder.hypriot.com/hypriot/rpi-node)
+# rpi-node [![Build Status](https://travis-ci.org/hypriot/rpi-node.svg?branch=master)](https://travis-ci.org/hypriot/rpi-node)
 
 Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 
 Run all the commands from within the project root directory.
 
 ### Supported tags and respective `Dockerfile` links
-- `7.0.0`, `7.0`, `7`, `latest` ([7.0/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/Dockerfile))
-- `7.0.0-onbuild`, `7.0-onbuild`, `7-onbuild`, `onbuild` ([7.0/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/onbuild/Dockerfile))
-- `7.0.0-slim`, `7.0-slim`, `7-slim`, `slim` ([7.0/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/slim/Dockerfile))
-- `7.0.0-wheezy`, `7.0-wheezy`, `7-wheezy`, `wheezy` ([7.0/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.0/wheezy/Dockerfile))
-- `6.9.1`, `6.9`, `6`, `boron`, `latest` ([6.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/Dockerfile))
-- `6.9.1-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` ([6.9/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/onbuild/Dockerfile))
-- `6.9.1-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` ([6.9/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/slim/Dockerfile))
-- `6.9.1-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy`, `wheezy` ([6.9/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/wheezy/Dockerfile))
-- `4.6.1`, `4.6`, `4`, `argon` ([4.6/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/Dockerfile))
-- `4.6.1-onbuild`, `4.6-onbuild`, `4-onbuild`, `argon-onbuild` ([4.6/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/onbuild/Dockerfile))
-- `4.6.1-slim`, `4.6-slim`, `4-slim`, `argon-slim` ([4.6/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/slim/Dockerfile))
-- `4.6.1-wheezy`, `4.6-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.6/wheezy/Dockerfile))
+- `7.3.0`, `7.3`, `7`, `latest` ([7.3/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/Dockerfile))
+- `7.3.0-onbuild`, `7.3-onbuild`, `7-onbuild`, `onbuild` ([7.3/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/onbuild/Dockerfile))
+- `7.3.0-slim`, `7.3-slim`, `7-slim`, `slim` ([7.3/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/slim/Dockerfile))
+- `7.3.0-wheezy`, `7.3-wheezy`, `7-wheezy`, `wheezy` ([7.3/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/wheezy/Dockerfile))
+- `6.9.2`, `6.9`, `6`, `boron`, `latest` ([6.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/Dockerfile))
+- `6.9.2-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` ([6.9/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/onbuild/Dockerfile))
+- `6.9.2-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` ([6.9/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/slim/Dockerfile))
+- `6.9.2-wheezy`, `6.9-wheezy`, `6-wheezy`, `boron-wheezy`, `wheezy` ([6.9/wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/wheezy/Dockerfile))
+- `4.7.3`, `4.7`, `4`, `argon` ([4.7/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.7/Dockerfile))
+- `4.7.3-onbuild`, `4.7-onbuild`, `4-onbuild`, `argon-onbuild` ([4.7/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.7/onbuild/Dockerfile))
+- `4.7.3-slim`, `4.7-slim`, `4-slim`, `argon-slim` ([4.7/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.7/slim/Dockerfile))
+- `4.7.3-wheezy`, `4.7-wheezy`, `4-wheezy`, `argon-wheezy` ([wheezy/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.7/wheezy/Dockerfile))
 
 ## rpi-node
 

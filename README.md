@@ -5,9 +5,9 @@ Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 Run all the commands from within the project root directory.
 
 ### Supported tags and respective `Dockerfile` links
-- `7.3.0`, `7.3`, `7`, `latest` ([7.3/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/Dockerfile))
-- `7.3.0-onbuild`, `7.3-onbuild`, `7-onbuild`, `onbuild` ([7.3/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/onbuild/Dockerfile))
-- `7.3.0-slim`, `7.3-slim`, `7-slim`, `slim` ([7.3/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/slim/Dockerfile))
+- `7.4.0`, `7.3`, `7`, `latest` ([7.3/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/Dockerfile))
+- `7.4.0-onbuild`, `7.3-onbuild`, `7-onbuild`, `onbuild` ([7.3/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/onbuild/Dockerfile))
+- `7.4.0-slim`, `7.3-slim`, `7-slim`, `slim` ([7.3/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.3/slim/Dockerfile))
 - `6.9.3`, `6.9`, `6`, `boron`, `latest` ([6.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/Dockerfile))
 - `6.9.3-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` ([6.9/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/onbuild/Dockerfile))
 - `6.9.3-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` ([6.9/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/slim/Dockerfile))

@@ -5,7 +5,7 @@ language: bash
 env:
   - VERSION=4.7
   - VERSION=6.9
-  - VERSION=7.3
+  - VERSION=7.4
 script:
 # prepare qemu
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset

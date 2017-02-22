@@ -5,15 +5,15 @@ Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
 Run all the commands from within the project root directory.
 
 ### Supported tags and respective `Dockerfile` links
-- `7.4.0`, `7.4`, `7`, `latest` ([7.4/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.4/Dockerfile))
-- `7.4.0-onbuild`, `7.4-onbuild`, `7-onbuild`, `onbuild` ([7.4/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.4/onbuild/Dockerfile))
-- `7.4.0-slim`, `7.4-slim`, `7-slim`, `slim` ([7.4/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.4/slim/Dockerfile))
-- `6.9.4`, `6.9`, `6`, `boron`, `latest` ([6.9/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/Dockerfile))
-- `6.9.4-onbuild`, `6.9-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` ([6.9/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/onbuild/Dockerfile))
-- `6.9.4-slim`, `6.9-slim`, `6-slim`, `boron-slim`, `slim` ([6.9/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.9/slim/Dockerfile))
-- `4.7.2`, `4.7`, `4`, `argon` ([4.7/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.7/Dockerfile))
-- `4.7.2-onbuild`, `4.7-onbuild`, `4-onbuild`, `argon-onbuild` ([4.7/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.7/onbuild/Dockerfile))
-- `4.7.2-slim`, `4.7-slim`, `4-slim`, `argon-slim` ([4.7/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.7/slim/Dockerfile))
+- `7.6.0`, `7.6`, `7`, `latest` ([7.6/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.6/Dockerfile))
+- `7.6.0-onbuild`, `7.6-onbuild`, `7-onbuild`, `onbuild` ([7.6/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.6/onbuild/Dockerfile))
+- `7.6.0-slim`, `7.6-slim`, `7-slim`, `slim` ([7.6/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/7.6/slim/Dockerfile))
+- `6.10.0`, `6.10`, `6`, `boron`, `latest` ([6.10/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.10/Dockerfile))
+- `6.10.0-onbuild`, `6.10-onbuild`, `6-onbuild`, `boron-onbuild`, `onbuild` ([6.10/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.10/onbuild/Dockerfile))
+- `6.10.0-slim`, `6.10-slim`, `6-slim`, `boron-slim`, `slim` ([6.10/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/6.10/slim/Dockerfile))
+- `4.8.0`, `4.8`, `4`, `argon` ([4.8/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.8/Dockerfile))
+- `4.8.0-onbuild`, `4.8-onbuild`, `4-onbuild`, `argon-onbuild` ([4.8/onbuild/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.8/onbuild/Dockerfile))
+- `4.8.0-slim`, `4.8-slim`, `4-slim`, `argon-slim` ([4.8/slim/Dockerfile](https://github.com/hypriot/rpi-node/blob/master/4.8/slim/Dockerfile))
 
 ## rpi-node
 

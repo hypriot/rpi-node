@@ -3,9 +3,9 @@ services:
 - docker
 language: bash
 env:
-  - VERSION=4.7
-  - VERSION=6.9
-  - VERSION=7.4
+  - VERSION=4.8
+  - VERSION=6.10
+  - VERSION=7.6
 script:
 # prepare qemu
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset

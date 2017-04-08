@@ -28,8 +28,17 @@ for version in "${versions[@]}"; do
   echo $version
   tag=$(cat $version/Dockerfile | grep "ENV NODE_VERSION" | cut -d' ' -f3)
 
-  info "Testing $tag..."
+  info "Testing NodeJS version $tag..."
   docker run hypriot/rpi-node:$tag node --version
+
+  if [[ $? -gt 0 ]]; then
+    fatal "Test of $tag failed!"
+  else
+    info "Test of $tag succeeded."
+  fi
+
+  info "Testing Yarn..."
+  docker run hypriot/rpi-node:$tag yarn --version
 
   if [[ $? -gt 0 ]]; then
     fatal "Test of $tag failed!"
@@ -40,13 +49,22 @@ for version in "${versions[@]}"; do
   variants=( slim onbuild )
 
   for variant in "${variants[@]}"; do
-    info "Testing $tag-$variant variant..."
+    info "Testing NodeJS version $tag-$variant variant..."
     docker run hypriot/rpi-node:$tag-$variant node --version
 
     if [[ $? -gt 0 ]]; then
       fatal "Test of $tag-$variant failed!"
     else
       info "Test of $tag-$variant succeeded."
+    fi
+
+    info "Testing Yarn-$variant variant..."
+    docker run hypriot/rpi-node:$tag yarn --version
+
+    if [[ $? -gt 0 ]]; then
+      fatal "Test of $tag failed!"
+    else
+      info "Test of $tag succeeded."
     fi
 
   done

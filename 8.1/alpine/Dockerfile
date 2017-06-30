@@ -42,7 +42,7 @@ RUN adduser -D -u 1000 node \
     && rm -Rf "node-v$NODE_VERSION" \
     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 
-ENV YARN_VERSION 0.22.0
+ENV YARN_VERSION 0.24.6
 
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg \
   && for key in \

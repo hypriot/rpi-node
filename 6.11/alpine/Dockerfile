@@ -1,7 +1,7 @@
 FROM hypriot/rpi-alpine:3.5
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 6.11.0
+ENV NODE_VERSION 6.11.1
 
 RUN adduser -D -u 1000 node \
     && apk add --no-cache \
@@ -42,7 +42,7 @@ RUN adduser -D -u 1000 node \
     && rm -Rf "node-v$NODE_VERSION" \
     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 
-ENV YARN_VERSION 0.24.6
+ENV YARN_VERSION 0.27.5
 
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg \
   && for key in \

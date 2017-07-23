@@ -1,50 +1,9 @@
 FROM resin/rpi-raspbian:jessie
 
-# Install common build dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     curl \
     wget \
-    bzr \
-    git \
-    mercurial \
-    openssh-client \
-    subversion \
-    procps \
-    autoconf \
-    automake \
-    bzip2 \
-    file \
-    g++ \
-    gcc \
-    imagemagick \
-    libbz2-dev \
-    libc6-dev \
-    libcurl4-openssl-dev \
-    libevent-dev \
-    libffi-dev \
-    libgeoip-dev \
-    libglib2.0-dev \
-    libjpeg-dev \
-    liblzma-dev \
-    libmagickcore-dev \
-    libmagickwand-dev \
-    libmysqlclient-dev \
-    libncurses-dev \
-    libpng-dev \
-    libpq-dev \
-    libreadline-dev \
-    libsqlite3-dev \
-    libssl-dev \
-    libtool \
-    libwebp-dev \
-    libxml2-dev \
-    libxslt-dev \
-    libyaml-dev \
-    make \
-    patch \
-    xz-utils \
-    zlib1g-dev \
   && rm -rf /var/lib/apt/lists/* \
   && apt-get clean
 
@@ -64,7 +23,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 8.1.3
+ENV NODE_VERSION 8.2.1
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-armv6l.tar.gz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
@@ -73,7 +32,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && tar -xzf "node-v$NODE_VERSION-linux-armv6l.tar.gz" -C /usr/local --strip-components=1 \
   && rm "node-v$NODE_VERSION-linux-armv6l.tar.gz" SHASUMS256.txt SHASUMS256.txt.asc
 
-ENV YARN_VERSION 0.24.6
+ENV YARN_VERSION 0.27.5
 
 RUN set -ex \
   && for key in \

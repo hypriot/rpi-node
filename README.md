@@ -1,3 +1,7 @@
+# DEPRECATION NOTICE
+
+You can find semi-official Node.js Docker images for ARM at https://hub.docker.com/r/arm32v7/node/, so this repo is no longer maintained.
+
 # rpi-node [![Build Status](https://travis-ci.org/hypriot/rpi-node.svg?branch=master)](https://travis-ci.org/hypriot/rpi-node)
 
 Raspberry Pi compatible Docker base image with [Node.js](http://nodejs.org)
